@@ -1,0 +1,47 @@
+nav {
+    background-color: gainsboro;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+nav ul li {
+    margin-right: 15px; 
+    font-size: 2em;
+    font-family: "Playwrite GB S", serif;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover {
+    color: #007bff;
+}
+.active{
+    font-weight: bold;
+    color: #007bff;
+}
+h1,p{
+    font-size: 2em;
+}
+body{
+    background: linear-gradient(90deg, #8360c3, #2ebf91);
+}
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+p{
+    text-decoration: underline;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme de l'Événement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #8360c3, #2ebf91);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: purple;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: purple;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .btn-download {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-download:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Programme de l'Événement Education et Formation</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horaires</th>
+                    <th>Sessions</th>
+                    <th>Thème</th>
+                    <th>Intervenants</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td>Ouverture</td>
+                    <td>Bienvenue et présentation de l'événement</td>
+                    <td>Dr. Hudier-eric</td>
+                </tr>
+                <tr>
+                    <td>10:15 - 11:15</td>
+                    <td>Conférence</td>
+                    <td>Les nouvelles tendances en éducation</td>
+                    <td>Prof. Park-chan-wang</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:30</td>
+                    <td>Atelier</td>
+                    <td>Utilisation des technologies dans l'enseignement</td>
+                    <td>Dr. Berger-maxime</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>Conférence</td>
+                    <td>L'apprentissage tout au long de la vie</td>
+                    <td>Dr. Berger-maxime</td>
+                </tr>
+                <tr>
+                    <td>15:15 - 16:15</td>
+                    <td>Panel de discussion</td>
+                    <td>Les défis de l'éducation moderne</td>
+                    <td>Panel de divers experts</td>
+                </tr>
+                <tr>
+                    <td>16:30 - 17:30</td>
+                    <td>Clôture</td>
+                    <td>Résumé et perspectives futures</td>
+                    <td>Dr. Hudier-eric</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="programme.pdf" class="btn-download" download>Télécharger le Programme en PDF</a>
+    </div>
+
+</body>
+</html>

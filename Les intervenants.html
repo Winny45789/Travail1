@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervenants</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #8360c3, #2ebf91);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: purple;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+       
+        .speaker-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .speaker-card {
+            background-color: purple;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .speaker-card:hover {
+            transform: scale(1.05);
+        }
+        .speaker-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .speaker-name {
+            font-size: 20px;
+            margin: 15px 0 5px 0;
+            color:black;
+        }
+        .speaker-bio {
+            font-size: 14px;
+            color: black;
+            margin-bottom: 15px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color:green;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-links a:hover {
+            color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Les Intervenants</h1>
+        <div class="speaker-grid">
+            <!-- Utilisation de la class speaker-card pour styliser les cartes des intervenants avec du CSS -->
+            <div class="speaker-card">
+                <div class="speaker-photo">
+                    <img src="images/berger-maxime.jpeg" alt="Photo de l'intervenant 1">
+                </div>
+                <div class="speaker-name">Maxime Berger</div>
+                <div class="speaker-bio">Expert en éducation, Formation continue Professeur en génie à l'UQAR.</div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/berger-maxime" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">
+                    <img src="images/hudier-eric.jpg" alt="Photo de l'intervenant 2">
+                </div>
+                <div class="speaker-name">Hudier Eric</div>
+                <div class="speaker-bio">Expert en formation et en éducation. Formation de futurs ingénieurs et directeur du département de génie civil.</div>
+                <div class="social-links">
+                    <a href="linkedin.com/in/eric-hudier-b6384a49" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">
+                    <img src="images/park-chan-wang.jpg" alt="Photo de l'intervenant 3">
+                </div>
+                <div class="speaker-name">Chang Wang Park</div>
+                <div class="speaker-bio">Professeur dans le monde de la science formateur et chef du département de génie électrique a l'UQAR</div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/park-chan-wang" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

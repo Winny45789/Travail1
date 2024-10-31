@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éducation et Formation - Page d'accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        nav {
+            background-color: gainsboro;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+        }
+        nav ul li {
+            margin-right: 15px;
+            font-size: 1.2em;
+            font-family: "Montserrat", sans-serif;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        .active {
+            font-weight: bold;
+            color: #007bff;
+        }
+        h1 {
+            font-size: 3em;
+            font-family: "Montserrat", sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 30px 0;
+            background-color: purple;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        body {
+            background: linear-gradient(90deg, #8360c3, #2ebf91);
+            font-family: "Manrope", sans-serif;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .event-info p {
+            font-size: 1.2em;
+            color: #333;
+            margin: 15px 0;
+        }
+        .video-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="Programme.html">Programme</a></li>
+            <li><a href="Inscription.html">Inscription</a></li>
+            <li><a href="A propos de l'évènement.html">À propos de l'événement</a></li>
+            <li><a href="Les intervenants.html">Les intervenants</a></li>
+            <li><a href="Page de contact.html">Page de contact</a></li>
+            <li><a href="Partenaires et sponsors.html">Partenaires et sponsors</a></li>
+        </ul>
+    </nav>
+
+    <header class="container">
+        <h1>Événement dédié à l'Éducation et à la Formation</h1>
+        <img src="images/image1.jpg" alt="Éducation et formation" class="img-fluid" width="100%">
+    </header>
+
+    <section class="container event-info">
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Date :</strong> 28 Octobre 2024</p>
+                <p><strong>Lieu :</strong> UQAR Campus de Lévis, Local 1078</p>
+                <p>Rejoignez-nous pour un événement inspirant qui réunit les experts de l'éducation et de la formation. Découvrez les dernières tendances et innovations du secteur.</p>
+                <a href="Inscription.html" class="btn btn-primary">Inscription / Achat de billet</a>
+            </div>
+            <div class="col-md-6 video-section">
+                <p>Vidéo promotionnelle</p>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Q_HQAiU2uRY?si=X6tTggWuY2E1vPQ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

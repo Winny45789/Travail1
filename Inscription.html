@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #8360c3, #2ebf91);
+            color: #333;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: purple;
+            color: white;
+            text-align: center; 
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-group button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-reset {
+            background-color: #dc3545;
+            color: white;
+        }
+        .ticket-prices {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Éducation et Formation</h1>
+        <p>Bienvenue à notre événement axé sur l'éducation et la formation continue pour les professionnels.</p>
+    </header>
+    <form action="#" method="post">
+       
+        <fieldset>
+            <legend>Informations Personnelles</legend>
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="sexe">Sexe :</label>
+                <select id="sexe" name="sexe">
+                    <option value="masculin">Masculin</option>
+                    <option value="feminin">Féminin</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse postale :</label>
+                <textarea id="adresse" name="adresse" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse courriel :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informations Professionnelles</legend>
+            <div class="form-group">
+                <label for="entreprise">Entreprise/Organisation :</label>
+                <input type="text" id="entreprise" name="entreprise">
+            </div>
+            <div class="form-group">
+                <label for="poste">Titre du poste :</label>
+                <input type="text" id="poste" name="poste">
+            </div>
+            <div class="form-group">
+                <label for="secteur">Secteur d'activité :</label>
+                <input type="text" id="secteur" name="secteur">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Type de Billet et Mode de Paiement</legend>
+            <div class="form-group">
+                <label for="billet">Type de billet :</label>
+                <select id="billet" name="billet">
+                    <option value="standard">Standard</option>
+                    <option value="vip">VIP</option>
+                    <option value="etudiant">Étudiant</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="code-promo">Code promo :</label>
+                <input type="text" id="code-promo" name="code-promo">
+            </div>
+        </fieldset>
+
+        <div class="btn-group">
+            <button type="submit" class="btn-submit">Soumettre</button>
+            <button type="reset" class="btn-reset">Réinitialiser</button>
+        </div>
+    </form>
+    <div class="ticket-prices">
+        <h2>Prix des Billets</h2>
+        <ul>
+            <li>Standard : 50 $</li>
+            <li>VIP : 100 $</li>
+            <li>Étudiant : 30 $</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
